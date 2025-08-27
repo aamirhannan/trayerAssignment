@@ -3,7 +3,7 @@ import path from 'path';
 import { parse } from '@babel/parser';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
-import { Symbol, SearchResult, ASTNode } from './types.js';
+import { Symbol, SearchResult, ASTNode } from '../types/types.js';
 
 const require = createRequire(import.meta.url);
 const traverse = require('@babel/traverse').default;

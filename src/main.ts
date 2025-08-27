@@ -1,10 +1,10 @@
 import path from "path";
-import { buildIndex, search } from "./indexer.js";
-import { parseIntentWithLLM } from "./intent-llm.js";
-import { loadCache, saveCache, ensureEmbeddings, rerank } from "./vectorstore.js";
+import { buildIndex, search } from "./index-tree/indexer.js";
+import { parseIntentWithLLM } from "./LLM-config/intent-llm.js";
+import { loadCache, saveCache, ensureEmbeddings, rerank } from "./store/vectorstore.js";
 import { fileURLToPath } from 'url';
-import { planningWithLLM } from "./planning-llm.js";
-import { Symbol, RerankResult } from "./types.js";
+import { planningWithLLM } from "./LLM-config/planning-llm.js";
+import { Symbol, RerankResult } from "./types/types.js";
 
 async function main(): Promise<void> {
     const [, , ...args] = process.argv;

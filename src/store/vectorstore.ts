@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import crypto from "crypto";
 import { embed } from "./embedder.js";
-import { Symbol, Cache, CacheEntry, RerankOptions, RerankResult } from "./types.js";
+import { Symbol, Cache, CacheEntry, RerankOptions, RerankResult } from "../types/types.js";
 
 const CACHE_DIR = ".cache";
 const CACHE_FILE = path.join(CACHE_DIR, "symbol-embeddings.json");

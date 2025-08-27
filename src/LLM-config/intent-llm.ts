@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import dotenv from "dotenv";
-import { Intent } from "./types.js";
+import { Intent } from "../types/types.js";
 
 dotenv.config();
 
