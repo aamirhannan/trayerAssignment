@@ -1,4 +1,4 @@
-# AST Parsing Project
+# Traycer AI Code Search Tool
 
 A TypeScript-based code analysis tool that uses natural language to find and understand code symbols in a repository.
 
